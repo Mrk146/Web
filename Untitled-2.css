@@ -1,0 +1,34 @@
+body {
+    background: black;
+    background-image: url(fondo.png);
+}
+
+/* Color barra menú */
+.menu {
+  background-color: #393E46;
+  overflow: hidden;
+}
+
+/* Cambiar estilo links menú */
+.menu a {
+  float: none;
+  color: white;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Cambiar color link dentro del menu */
+.menu a:hover {
+  background-color: #FFE8D6;
+  color: black;
+}
+
+/* Cambiar color al link activo */
+.menu a.active {
+  background-color: #FFE8D6;
+  color: black;
+}
