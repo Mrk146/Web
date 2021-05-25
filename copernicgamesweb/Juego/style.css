@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.slider-container {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  overflow: hidden;
+  
+}
+
+.slider {
+
+  position: relative;
+  top: 0;
+  left: 0;
+  transition: left 400ms ease;
+}
+.slider:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.slider__item {
+  position: relative;
+  display: block;
+  float: left;
+  width: 33.3333333%;
+}
+
+.slider__item-caption {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  padding: 8px 15px;
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.5);
+  font: 100 0.8em/1.2 Helvetica, sans-serif;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.pagination, .pagination__item {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.pagination {
+  margin: 0 0 0 50%;
+  transform: translateX(-50%);
+  padding: 10px 0 0 0;
+  list-style: none;
+}
+
+.pagination__item {
+  vertical-align: top;
+  padding: 5px;
+  font-size: 0;
+  cursor: pointer;
+}
+
+.pagination__item span {
+  display: block;
+  width: 8px;
+  height: 8px;
+  background-color: #000;
+  border-radius: 50%;
+  opacity: 0.5;
+  transition: all 220ms ease;
+}
+
+.pagination__item:hover span {
+  transform: scale(2);
+}
+
+.pagination__item.pagination__item--current span {
+  opacity: 1;
+}
+
+
+body {
+  font: 400 1em/1.5 "Neuton";
+  background: #white;
+  color: rgba(255, 255, 255, 0.25);
+
+  margin: 0;
+}
+
+.animatedText2 {
+	text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+  display: inline-block;
+  border: 4px double rgba(255, 255, 255, 0.25);
+  border-width: 4px 0;
+  padding: 1.5em 0em;
+  position: absolute;
+  top: 18%;
+  left: 50%;
+  width: 40em;
+  margin: 0 0 0 -20em;
+}
+.animatedText {
+	text-align: center;
+  font: 700 4em/1 "Oswald", sans-serif;
+  letter-spacing: 0;
+  padding: 0.25em 0 0.325em;
+  display: block;
+  margin: 0 auto;
+  /* Clip Background Image */
+  background: url(./textTexture.png) repeat-y;
+  -webkit-background-clip: text;
+  background-clip: text;
+  /* Animate Background Image */
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: aitf 20s linear infinite;
+  /* Activate hardware acceleration for smoother animations */
+  -webkit-transform: translate3d(0, 0, 0);
+  -webkit-backface-visibility: hidden;
+}
+
+/* Animate Background Image */
+@-webkit-keyframes aitf {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
