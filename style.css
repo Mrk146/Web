@@ -1,6 +1,6 @@
 @font-face {
     font-family: Jost;
-    src: url(Jost.woff2);
+    src: url(Jost.woff);
     font-weight: 600;
 }
 
@@ -191,7 +191,7 @@ body {
 /* Texto informativo contacto */
 .contacttext {
     color: white;
-    font-size: 20;
+    font-size: 22px;
 }
 
 /* Texto informativo curriculum */
