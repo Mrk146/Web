@@ -1,7 +1,8 @@
 <html>  
     <head>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="Untitled-2.css">
+        <link rel="icon" type="image/png" href="images/RM3.png"/>
+        <link rel="stylesheet" href="style.css">
         <title>RM Games</title>
     </head>
         <body>
@@ -12,6 +13,26 @@
                     <a href="sobrenosotros.html">Sobre nosotros</a>
                     <a class="active" href="contacto.html">Contacto</a>
                 </div>
+                <form class="contacto">
+                    <p class="contacttext">Si quieres enviar tu currículum para trabajar con nosotros o simplemente necestias ayuda puedes usar este formulario para contactar con nosotros.</p>
+                    <hr>
+                    <label class="textform">Nombre:</label>
+                        <input type="text" id="nombre"><br><br>
+                    <label class="textform">Correo:</label>
+                        <input type="email" id="correo"><br><br>
+                    <label class="textform">Motivo:</label>
+                    <select>
+                        <option>Currículum</option>
+                        <option>Dudas</option>
+                        <option>Otros</option>
+                    </select>
+                    <p><label class="textform">Mensaje:</label></p>
+                    <textarea class="textarea" rows="15" cols="55" name= "description"></textarea><br>
+                    <p class="textcurriculum">Subir currículum en formato PDF</p>
+                    <input type="file" accept="application/pdf" id="archivo" name="filename">
+                    <input type="submit" value="Enviar">
+                </form>
+                <hr>
             </div>
-        </body>
+       </body>
 </html>
